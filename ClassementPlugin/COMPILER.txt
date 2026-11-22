@@ -1,0 +1,9 @@
+Option A (Windows/Linux/Mac, en local) :
+  1. Installer Java 25 (Temurin) et Maven
+  2. Dans ce dossier : mvn package
+  3. Récupérer target/ClassementPlugin.jar et le mettre dans plugins/
+     (garder QuestPlugin.jar dans plugins/ pour le classement "Quêtes finies")
+
+Option B (sans rien installer) :
+  1. Créer un dépôt GitHub et y envoyer tout ce dossier
+  2. Onglet Actions -> build -> télécharger l'artefact "ClassementPlugin" (contient le .jar)

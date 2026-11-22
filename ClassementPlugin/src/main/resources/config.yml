@@ -1,0 +1,17 @@
+# Fuseau horaire : les classements sont remis à zéro (et les récompenses données)
+# chaque lundi à minuit dans ce fuseau.
+timezone: Europe/Paris
+
+# Où trouver la ville d'un joueur pour le Classement Ville :
+#   auto     -> Towny s'il est installé, sinon villes internes
+#   towny    -> force Towny
+#   internal -> villes gérées par /classementadmin ville <joueur> <nom|none>
+town-provider: auto
+
+# Annonce dans le chat à chaque reset hebdomadaire
+broadcast-reset: true
+
+# Liaison automatique avec QuestPlugin ("Quêtes finies").
+# Mets false si tu préfères ajouter les points via une commande de récompense de quête :
+#   classementadmin add %player% quetes 1
+quest-bridge: true

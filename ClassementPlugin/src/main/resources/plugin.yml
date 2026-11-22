@@ -1,0 +1,20 @@
+name: ClassementPlugin
+version: '1.0.0'
+main: fr.classement.ClassementPlugin
+api-version: '26.2'
+description: Classements hebdomadaires Solo et Ville avec récompenses et panel admin
+softdepend: [QuestPlugin, Vault, Towny]
+commands:
+  classement:
+    description: Ouvre le menu des classements
+    aliases: [classements, leaderboard]
+    permission: classement.use
+  classementadmin:
+    description: Panel administrateur des classements
+    aliases: [classementsadmin, cadmin]
+    permission: classement.admin
+permissions:
+  classement.use:
+    default: true
+  classement.admin:
+    default: op
